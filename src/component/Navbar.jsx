@@ -48,14 +48,14 @@ export default class Navbar extends Component {
                     الرئيسية
                   </Link>
                 </li>
-                <li className="navItem">
+                {/* <li className="navItem">
                   <Link to="/free" className="navLink">
                     المحاضرات المجانية
                   </Link>
-                </li>
+                </li> */}
                 <li className="navItem">
                   <Link to="/levels" className="navLink">
-                    المراحل
+                    الفرقه
                   </Link>
                 </li>
                 {/* <li className="navItem">
@@ -68,11 +68,11 @@ export default class Navbar extends Component {
                     المحاضرات المباشره
                   </a>
                 </li> */}
-                <li className="navItem">
+                {/* <li className="navItem">
                   <Link to="/who-us" className="navLink">
                     من نحن
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <div className="login">
                 {tokenexist ? (

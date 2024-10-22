@@ -4,5 +4,5 @@
 // // export const baseUrl = "https://api.golearn.site/";
 // export const baseUrl = "https://restfulapi.golearn.site/";
 export const baseUrl =
-  "https://www.exciting-swartz.162-220-162-242.plesk.page/";
+  "https://dazzling-wozniak.69-10-32-26.plesk.page/";
 // export const baseUrl = "http://ddd.somee.com/";

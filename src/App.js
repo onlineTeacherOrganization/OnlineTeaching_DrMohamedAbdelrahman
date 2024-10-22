@@ -26,6 +26,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Profile from "./pages/Profile";
 import Levels from "./pages/Levels";
+import Fields from "./pages/Fields";
 import LevelDetails from "./pages/LevelDetails";
 import SubjectDetails from "./pages/SubjectDetails";
 import MyLectures from "./pages/MyLectures";
@@ -77,12 +78,13 @@ class App extends Component {
             <Route exact path="/sign-up" component={SignUp} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/levels" component={Levels} />
+            <Route exact path="/:levelId/fields" component={Fields} />
             <Route exact path="/mylectures" component={MyLectures} />
             <Route exact path="/ResetPassword"  component={ResetPassword} />
             <Route exact path="/free" component={FreeLectures} />
             <Route exact path="/forget-password" component={ForgetPassword} />
             <Route exact path="/month-of-lecture/:id" component={MonthOfLectures} />
-            <Route exact path="/level-details/:id" component={LevelDetails} />
+            <Route exact path="/:levelId/:fieldId/level-details" component={LevelDetails} />
             <Route exact path="/subject-details/:id" component={SubjectDetails} />
             <Route exact component={NotFound} />
             <Route exact path="*" component={NotFound} />

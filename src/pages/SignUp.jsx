@@ -27,10 +27,12 @@ class SignUp extends Component {
     name: "",
     phoneNumber: "",
     levelID: 0,
+    specialID:0,
     email: "",
     password: "",
     confirmPassword: "",
     levels: [],
+    fields: [],
     loading: false,
     showPassword: false,
     showConfirmPassword: false,
@@ -47,6 +49,11 @@ class SignUp extends Component {
     axios.get(`${baseUrl}api/Levels`).then((res) => {
       this.setState({
         levels: res.data.items,
+      });
+    });
+    axios.get(`${baseUrl}api/Specialty`).then((res) => {
+      this.setState({
+        fields: res.data.items,
       });
     });
   }
@@ -99,6 +106,7 @@ class SignUp extends Component {
     };
     const {
       levels,
+      fields,
       name,
       phoneNumber,
       levelID,
@@ -123,6 +131,7 @@ class SignUp extends Component {
 
       const state = { ...this.state };
       delete state.levels;
+      delete state.fields;
       delete state.googleId;
       delete state.errorList;
       delete state.errorList2;
@@ -251,6 +260,26 @@ class SignUp extends Component {
                         {levels.map((lev, index) => (
                           <option value={lev.id} key={index}>
                             {lev.levelName}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </Grid>
+                   <Grid item xs={12} lg={12}>
+                    <div className="form-group">
+                      <select
+                        name="specialID"
+                        onChange={handelChange}
+                        className="form-control"
+                        placeholder="التخصص"
+                        id=""
+                      >
+                        <option selected="true" disabled="disabled">
+                          اختر التخصص
+                        </option>
+                        {fields.map((field, index) => (
+                          <option value={field.id} key={index}>
+                            {field.name}
                           </option>
                         ))}
                       </select>

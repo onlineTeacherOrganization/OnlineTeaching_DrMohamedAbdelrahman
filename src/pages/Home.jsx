@@ -223,7 +223,7 @@ class Home extends Component {
         </div>
 
         {/* Lectures */}
-        <div className="lectures">
+        {/* <div className="lectures">
           <div className="lecture-afte">
             <img src={`${sourceBaseForImage}/dots.png`} alt="" />
           </div>
@@ -237,10 +237,10 @@ class Home extends Component {
             </div>
             <Honors />
           </Container>
-        </div>
+        </div> */}
 
         {/* Faq */}
-        <div className="faq">
+        {/* <div className="faq">
           <div className="faq-img-af">
             <img src={`${sourceBaseForImage}/big-cir.png`} alt="" />
           </div>
@@ -262,7 +262,7 @@ class Home extends Component {
               </Grid>
             </Grid>
           </Container>
-        </div>
+        </div> */}
 
         <div className="live-lectures">
           <LiveLectures />
@@ -353,7 +353,7 @@ class Home extends Component {
             backgroundImage: `url(${sourceBaseForImage}/why-wait-bg.png)`,
           }}
         >
-          <Container>
+          {/* <Container>
             <Grid container>
               <Grid item xs={12} md={7} lg={6}>
                 <div className="why-patform-content">
@@ -383,7 +383,7 @@ class Home extends Component {
                 </div>
               </Grid>
             </Grid>
-          </Container>
+          </Container> */}
         </div>
 
         {/* number */}

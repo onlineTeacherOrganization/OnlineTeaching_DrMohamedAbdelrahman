@@ -21,13 +21,16 @@ export default class LevelDetails extends Component {
   };
 
   componentDidMount() {
-    const levelId = this.props.match.params.id;
+    const fieldId = this.props.match.params.fieldId;
+    const levelId = this.props.match.params.levelId;
+    console.log('kjklhh',this.props.match.params);
+    
     // const URL_PASE = "http://hossam1234-001-site1.ftempurl.com/api/";
     const URL_PASE = "https://localhost:44334/api/";
 
     const token = GetUserToken();
     axios
-      .get(`${baseUrl}api/Subjects/Search/${levelId}?size=10`, {
+      .get(`${baseUrl}api/Subjects/GeyBySpecialty/${fieldId}/${levelId}?size=10`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {

@@ -49,14 +49,14 @@ export default class Sidebar extends Component {
                   الرئيسية
                 </Link>
               </li>
-              <li className="navItem">
+              {/* <li className="navItem">
                 <Link to="/free" className="navLink">
                   المحاضرات المجانية
                 </Link>
-              </li>
+              </li> */}
               <li className="navItem">
                 <Link to="/levels" className="navLink">
-                  المراحل
+                  الفرقه
                 </Link>
               </li>
               {/* <li className="navItem">
@@ -69,11 +69,11 @@ export default class Sidebar extends Component {
                     المحاضرات المباشره
                   </a>
                 </li> */}
-              <li className="navItem">
+              {/* <li className="navItem">
                 <Link to="/who-us" className="navLink">
                   من نحن
                 </Link>
-              </li>
+              </li> */}
               <li className="navItem">
                 <Link to="#" className="navLink">
                   تواصل معنا

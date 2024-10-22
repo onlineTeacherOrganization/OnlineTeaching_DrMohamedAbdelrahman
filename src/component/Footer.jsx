@@ -132,7 +132,7 @@ class Footer extends Component {
             <h5>
               <span>جميع الحقوق محفوظه</span>
               <span style={{ fontWeight: "400" }}>
-                Powered By<strong> EQSoftware</strong>
+                Powered By<strong className="powered-by-link"> <a href="https://facebook.com/BrainySoftware23" target="_blank"> Brainy Software </a></strong>
               </span>
             </h5>
           </Container>
