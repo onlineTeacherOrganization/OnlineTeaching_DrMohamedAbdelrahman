@@ -40,7 +40,7 @@ export default class Navbar extends Component {
           <Container>
             <div className="mynavbar-parent">
               <div className="logo">
-                <img src={`${sourceBaseForImage}/logo.png`} alt="" />
+                <img src={`${sourceBaseForImage}/drMohamedLogo.png`} alt="" />
               </div>
               <ul className="links">
                 <li className="navItem">

@@ -104,7 +104,7 @@ class Home extends Component {
           >
             {/* <img src="./images/contact-after.png" alt="" /> */}
           </div>
-          <Container>
+          {/* <Container>
             <Grid container>
               <Grid item xs={12} md={6} lg={6}>
                 <div className="header-content">
@@ -121,10 +121,9 @@ class Home extends Component {
               </Grid>
               <Grid item xs={12} md={1} lg={1}></Grid>
               <Grid item xs={12} md={5} lg={4}>
-                {/* <SignUpForm /> */}
               </Grid>
             </Grid>
-          </Container>
+          </Container> */}
         </div>
 
         {/* about */}
@@ -137,7 +136,7 @@ class Home extends Component {
               <Grid item xs={12} md={6} lg={6}>
                 <div className="about-img">
                   <img
-                    src={`${sourceBaseForImage}/wagdy-samer.jpeg`}
+                    src={`${sourceBaseForImage}/drMohamed.jpeg`}
                     alt=""
                     style={{ width: "400px" }}
                   />
@@ -264,11 +263,11 @@ class Home extends Component {
           </Container>
         </div> */}
 
-        <div className="live-lectures">
+        {/* <div className="live-lectures">
           <LiveLectures />
-        </div>
+        </div> */}
 
-        <Container>
+        {/* <Container>
           <div className="main-video-parent">
             <div className="section-header">
               <h6>كيف</h6>
@@ -279,7 +278,7 @@ class Home extends Component {
               style={{
                 backgroundImage: `url(/about.png')`,
               }}
-            >
+            > */}
               {/* <iframe
                 width="100%"
                 height="100%"
@@ -299,9 +298,9 @@ class Home extends Component {
                 }}
                 allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               ></iframe> */}
-            </div>
+            {/* </div>
           </div>
-        </Container>
+        </Container> */}
 
         {/* what they say */}
         <div className="what-say">

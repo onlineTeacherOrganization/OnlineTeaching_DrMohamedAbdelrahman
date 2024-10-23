@@ -24,12 +24,12 @@ class Footer extends Component {
       <div className="site-footer">
         <footer>
           <Container>
-            <Grid container fixed spacing={4}>
-              <Grid item xs={12} sm={6} md={4} lg={5}>
+            <Grid container fixed spacing={4} className="footer-section-box">
+              <Grid item xs={12} sm={6} md={4} lg={5} className="logo-box">
                 <div className="footer-logo-content">
                   <div className="logo">
-                    <img src={`${sourceBaseForImage}/logo.png`} alt="" />
-                    <p>
+                    <img src={`${sourceBaseForImage}/drMohamedLogo.png`} alt="" />
+                    {/* <p>
                       علم الفيزياء من العلوم الهامة في الحياة، ويصعب كثيرًا
                       تحديد معنى واحد دقيق لعلم الفيزياء، حيث يتغير المفهوم
                       بتطور الاكتشافات والاختراعات في الحياة، فهو من العلوم
@@ -37,7 +37,7 @@ class Footer extends Component {
                       أنها لا تنحصر على محطات الفضاء بل تستخدم في دراسة المادة
                       والطاقة، وتُعد حقل كبير من العلوم، وكلمة الفيزياء هي كلمة
                       يونانية بالأصل وتعني معرفة الطبيعة.
-                    </p>
+                    </p> */}
                   </div>
                   <div className="social">
                     <a href={teacherInfo.whatsappLink} target="_blank">
@@ -52,7 +52,7 @@ class Footer extends Component {
                   </div>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={6} md={4} lg={3}>
+              {/* <Grid item xs={12} sm={6} md={4} lg={3}>
                 <div className="important-link">
                   <h5>روابط هامة</h5>
                   <ul className="list-unstyled">
@@ -76,29 +76,29 @@ class Footer extends Component {
                         موقع جيزجيبرا للرسومات
                       </a>
                     </li>
-                    {/* <li>
+                    <li>
                       <a href="https://www.youtube.com/c/anaHr">
                         {" "}
                         صفحه انا حر للرياضيات والفيزياء
                       </a>
-                    </li> */}
-                    {/* <li>
+                    </li>
+                    <li>
                       <a href="https://www.youtube.com/c/DroosOnline4u">
                         {" "}
                         دروس اونلاين
                       </a>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
-              </Grid>
+              </Grid> */}
               <Grid item xs={12} sm={6} md={4} lg={4}>
                 <div className="more-important">
                   <h5>هام جدا</h5>
                   <ul className="list-unstyled">
                     <li>
                       <span>رقم المعلم: </span>
-                      {/* <span> {teacherInfo.phoneNumber} </span> */}
-                      <span>01221981935</span>
+                      <span> {teacherInfo.phoneNumber} </span>
+                      {/* <span>01221981935</span> */}
                     </li>
                     {/* <li>
                       <span>رقم السكرتاريه: </span>
@@ -106,8 +106,8 @@ class Footer extends Component {
                     </li> */}
                     <li>
                       <span>رقم فودافون كاش: </span>
-                      {/* <span> {teacherInfo.vodafonCachPhoneNumber} </span> */}
-                      <span>01021987476</span>
+                      <span> {teacherInfo.vodafonCachPhoneNumber} </span>
+                      {/* <span>01021987476</span> */}
                     </li>
                     {/* <li>
                       <span>رقم تفعيل الاشتراك : </span>
@@ -118,8 +118,8 @@ class Footer extends Component {
                     </li> */}
                     <li>
                       <span> العنوان : </span>
-                      {/* <span> {teacherInfo.address} </span> */}
-                      <span>اسيوط</span>
+                      <span> {teacherInfo.address} </span>
+                      {/* <span>اسيوط</span> */}
                     </li>
                   </ul>
                 </div>
@@ -132,7 +132,7 @@ class Footer extends Component {
             <h5>
               <span>جميع الحقوق محفوظه</span>
               <span style={{ fontWeight: "400" }}>
-                Powered By<strong className="powered-by-link"> <a href="https://facebook.com/BrainySoftware23" target="_blank"> Brainy Software </a></strong>
+                Developed By<strong className="powered-by-link"> <a href="https://facebook.com/BrainySoftware23" target="_blank"> Brainy Software </a></strong>
               </span>
             </h5>
           </Container>

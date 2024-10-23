@@ -290,7 +290,7 @@ button {
   color: #1fb354;
 }
 .mynavbr .logo img {
-  width: 120px;
+  width: 180px;
 }
 
 /* HEADER */
@@ -942,7 +942,7 @@ button {
 .number-card .card-text {
   color: #1f3b64;
   font-size: 30px;
-  margin-top: -30px;
+  /* margin-top: -30px; */
   position: relative;
   z-index: 9;
 }
@@ -1306,7 +1306,7 @@ footer {
   padding-bottom: 55px;
 }
 footer .footer-logo-content .logo img {
-  width: 100px;
+  width: 160px;
 }
 footer .footer-logo-content .logo p {
   margin-top: 19px;
@@ -1622,6 +1622,12 @@ input[type="number"] {
 
 .danger-text {
   color: red;
+}
+.footer-section-box {
+  justify-content: center;
+}
+.site-footer .logo-box {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */
