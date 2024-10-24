@@ -40,7 +40,7 @@ export default class Navbar extends Component {
           <Container>
             <div className="mynavbar-parent">
               <div className="logo">
-                <img src={`${sourceBaseForImage}/drMohamedLogo.png`} alt="" />
+                <img src={`${sourceBaseForImage}/drMohamedLogo.svg`} alt="" />
               </div>
               <ul className="links">
                 <li className="navItem">
@@ -57,6 +57,17 @@ export default class Navbar extends Component {
                   <Link to="/levels" className="navLink">
                     الفرقه
                   </Link>
+                </li>
+
+                <li className="navItem" onClick={() => {
+                    const element = document.getElementById('footer-section');
+                    element?.scrollIntoView({
+                      behavior: 'smooth'
+                    }); 
+                  }}>
+                  <a className="navLink">
+                    تواصل معنا 
+                  </a>
                 </li>
                 {/* <li className="navItem">
                   <Link to="/mylectures" className="navLink">

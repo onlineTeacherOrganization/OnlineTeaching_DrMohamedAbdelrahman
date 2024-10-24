@@ -21,14 +21,14 @@ class Footer extends Component {
   render() {
     const { teacherInfo } = this.state;
     return (
-      <div className="site-footer">
+      <div className="site-footer" id="footer-section">
         <footer>
           <Container>
             <Grid container fixed spacing={4} className="footer-section-box">
               <Grid item xs={12} sm={6} md={4} lg={5} className="logo-box">
                 <div className="footer-logo-content">
                   <div className="logo">
-                    <img src={`${sourceBaseForImage}/drMohamedLogo.png`} alt="" />
+                    <img src={`${sourceBaseForImage}/drMohamedLogo.svg`} alt="" />
                     {/* <p>
                       علم الفيزياء من العلوم الهامة في الحياة، ويصعب كثيرًا
                       تحديد معنى واحد دقيق لعلم الفيزياء، حيث يتغير المفهوم

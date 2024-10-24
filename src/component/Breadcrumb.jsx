@@ -11,7 +11,7 @@ class Breadcrumb extends Component {
         <div
           className="breadcrumb"
           style={{
-            backgroundImage: `url('${process.env.PUBLIC_URL}images/breadcrumb.jpg')`,
+            backgroundImage: `url('${process.env.PUBLIC_URL}images/levelsLogo.jpg')`,
           }}
           data-aos="fade-up"
           data-aos-duration="2000"

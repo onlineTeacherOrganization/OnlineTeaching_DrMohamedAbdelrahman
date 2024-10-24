@@ -96,7 +96,7 @@ class Home extends Component {
       <div className="home-page">
         <div
           className="header"
-          style={{ backgroundImage: `url('./images/header.jpg')` }}
+          style={{ backgroundImage: `url('./images/homeHeaderImage.jpg')` }}
         >
           <div
             className="bg-after"

@@ -74,11 +74,16 @@ export default class Sidebar extends Component {
                   من نحن
                 </Link>
               </li> */}
-              <li className="navItem">
-                <Link to="#" className="navLink">
-                  تواصل معنا
-                </Link>
-              </li>
+              <li className="navItem" onClick={() => {
+                    const element = document.getElementById('footer-section');
+                    element?.scrollIntoView({
+                      behavior: 'smooth'
+                    }); 
+                  }}>
+                  <a className="navLink">
+                    تواصل معنا 
+                  </a>
+                </li>
             </ul>
             <div className="login">
               {tokenexist ? null : (
